@@ -10,8 +10,8 @@
 <body>
 	<h1>  Valietti Davide  </h1>
 
-    <a href ="images/davide.jpeg" target="_blank"> 
-    	<img src="images/davide_mini.jpeg" alt="Photo d'identité" class="photo_identite" title="Photo prise en 2018"  /> </a>
+    <a href ="davide.jpeg" target="_blank"> 
+    	<img src="davide_mini.jpeg" alt="Photo d'identité" class="photo_identite" title="Photo prise en 2018"  /> </a>
 <div class= "testcolor">
 	
 		<button id="darkMode">Dark mode</button>
@@ -78,11 +78,11 @@
 	<h2>Ma formation</h2>
 	<h3>
 		<ul>
-			<li><em>2014 -<a href="images/diplome.jpeg" target=_blank> Diplome niveau 4 CEC</a> (equivalent Baccalauréat) - ITIS P. Paleocapa </em>- <strong>Italie (Bergamo)</strong> <br>
+			<li><em>2014 -<a href="diplome.jpeg" target=_blank> Diplome niveau 4 CEC</a> (equivalent Baccalauréat) - ITIS P. Paleocapa </em>- <strong>Italie (Bergamo)</strong> <br>
 				Specialité électrotechnique et automatismes. 
 			</li>
 			<br>
-			<li><em>2019 -<a href="images/pcie.jpeg" target=_blank> PCIE validé </a>- AFPA</em> - <strong>France (Meaux)</strong> <br>
+			<li><em>2019 -<a href="pcie.jpeg" target=_blank> PCIE validé </a>- AFPA</em> - <strong>France (Meaux)</strong> <br>
 				Windows, Word, Excel, PowerPoint, Outlook.	
 			</li>
 		</ul>
@@ -97,10 +97,10 @@
 	var darkComponents=document.querySelectorAll("h2, h1, h3, label, button")
 	darkMode.addEventListener("click", changecol)
 	function changecol ()
-		{ if(document.querySelector("html").style.backgroundImage=='url("images/darkfond.jpg")') {document.querySelector("html").style.backgroundImage='url("images/fond.jpg")'; document.getElementById("darkMode").innerHTML=("Dark mode");for(var i=0; i<darkComponents.length; i++) {darkComponents[i].classList.remove("dark");document.querySelector("html").style.backgroundColor="white"
+		{ if(document.querySelector("html").style.backgroundImage=='url("darkfond.jpg")') {document.querySelector("html").style.backgroundImage='url("fond.jpg")'; document.getElementById("darkMode").innerHTML=("Dark mode");for(var i=0; i<darkComponents.length; i++) {darkComponents[i].classList.remove("dark");document.querySelector("html").style.backgroundColor="white"
     
     }} 
-		else{document.querySelector("html").style.backgroundImage='url("images/darkfond.jpg")'; document.getElementById("darkMode").innerHTML=("Light mode"); for(var i=0; i<darkComponents.length; i++) {darkComponents[i].classList.add("dark");  document.querySelector("html").style.backgroundColor="black"
+		else{document.querySelector("html").style.backgroundImage='url("darkfond.jpg")'; document.getElementById("darkMode").innerHTML=("Light mode"); for(var i=0; i<darkComponents.length; i++) {darkComponents[i].classList.add("dark");  document.querySelector("html").style.backgroundColor="black"
     } }}
 
 france.addEventListener("click", function()
